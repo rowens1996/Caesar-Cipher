@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caesar Cipher App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="appbody">
+      <h1 id="header">Caesar Cipher</h1>
+      <input
+        type="number"
+        name="Cipher Code"
+        id="codeinput"
+        placeholder="Enter Cipher"
+      />
+      <div class="main">
+        <textarea
+          name=""
+          id="input"
+          cols="30"
+          rows="10"
+          class="textbox"
+          placeholder="Type here to encode or decode your message"
+        ></textarea>
+
+        <textarea
+          name=""
+          id="output"
+          cols="30"
+          rows="10"
+          class="textbox"
+          placeholder="Your message will appear here"
+        ></textarea>
+      </div>
+      <span>
+        <button class="btn" id="encrypt" onclick="encrypt()">Encrypt</button>
+        <button class="btn" id="decrypt" onclick="decrypt()">Decrypt</button>
+      </span>
+    </div>
+    <script src="caesar.js"></script>
+  </body>
+</html>
